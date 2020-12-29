@@ -9,6 +9,6 @@ namespace MovieBookingApp.Entities
     public class Movie
     {
         public int MovieID { get; set; }
-        public int MovieName { get; set; }
+        public string MovieName { get; set; }
     }
 }

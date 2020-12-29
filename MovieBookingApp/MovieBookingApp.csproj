@@ -53,6 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLayer\ITicketBookingService.cs" />
+    <Compile Include="BusinessLayer\TicketBookingService.cs" />
     <Compile Include="DataAccess\MovieBookingDB.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Booking.cs" />
@@ -63,6 +65,7 @@
     <Compile Include="Entities\Theatre.cs" />
     <Compile Include="Entities\Ticket.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

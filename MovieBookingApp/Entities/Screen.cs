@@ -12,7 +12,7 @@ namespace MovieBookingApp.Entities
         public int ScreenID { get; set; }
         public string ScreenName { get; set; }
 
-        [ForeignKey("Theatre")]
+        //[ForeignKey("Theatre")]
         public int TheatreID { get; set; }
         public virtual Theatre Theatre { get; set; }
 

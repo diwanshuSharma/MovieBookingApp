@@ -15,8 +15,8 @@ namespace MovieBookingApp.Entities
         public string LastName { get; set; }
         public virtual List<Booking> Bookings { get; set; } = new List<Booking>();
 
-        [ForeignKey("Address")]
+        //[ForeignKey("Address")]
         public int AddressID { get; set; }
-        public virtual Address Addresses { get; set; }
+        public virtual Address Address { get; set; }
     }
 }

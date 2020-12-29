@@ -12,7 +12,7 @@ namespace MovieBookingApp.Entities
         public char RowID { get; set; }
         public int SeatID { get; set; }
 
-        [ForeignKey("Ticket")]
+        //[ForeignKey("Ticket")]
         public int TicketID { get; set; }
         public virtual Ticket Ticket { get; set; }
     }

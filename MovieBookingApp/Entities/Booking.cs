@@ -13,11 +13,11 @@ namespace MovieBookingApp.Entities
         public DateTime BookingDate { get; set; }
         public virtual List<Ticket> Tickets { get; set; } = new List<Ticket>();
 
-        [ForeignKey("Show")]
+        //[ForeignKey("Show")]
         public int ShowID { get; set; }
         public virtual Show Show { get; set; }
 
-        [ForeignKey("User")]
+        //[ForeignKey("User")]
         public int UserID { get; set; }
         public virtual User User { get; set; }
     }

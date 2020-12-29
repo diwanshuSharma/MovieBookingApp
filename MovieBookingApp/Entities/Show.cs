@@ -13,11 +13,11 @@ namespace MovieBookingApp.Entities
         public DateTime ShowTime { get; set; }
         public double Cost { get; set; }
 
-        [ForeignKey("Screen")]
+        //[ForeignKey("Screen")]
         public int ScreenID { get; set; }
         public virtual Screen Screen { get; set; }
 
-        [ForeignKey("Movie")]
+        //[ForeignKey("Movie")]
         public int MovieID { get; set; }
         public virtual Movie Movie { get; set; }
 
