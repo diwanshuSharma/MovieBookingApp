@@ -43,10 +43,13 @@ namespace MovieBookingApp.BusinessLayer
         {
             var db = new MovieBookingDB();
             var totalTickets = (from ticket in db.Tickets
-                                where ticket.Booking.User.Address.Equals(cityName)
-                                select ticket).Count();
+                                join booking in db.Bookings on ticket.BookingID equals booking.BookingID
+                                join user in db.Users on booking.UserID equals user.UserID
+                                join address in db.Addresses on user.AddressID equals address.AddressID
+                                where address.City.Equals(cityName)
+                                select (ticket.TicketID)).Sum();
 
-            return totalTickets;
+            return (int)totalTickets;
         }
 
         public void DisplayReport(string movieName)
